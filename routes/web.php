@@ -17,3 +17,14 @@ Route::get('/welcome', function (){
 Route::get('/welcome/{id}', function($id){
     return view('test', ['name' => $id]);
 });
+Route::get('/user/show', 'UserController@show');
+
+Route::get('/home', function (){
+    return view ('home');
+});
+Route::get('/contactus', function (){
+    return view ('contactus');
+});
+Route::get('/aboutus', function (){
+    return view ('aboutus');
+});
